@@ -24,12 +24,18 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-color: red;
 }
-
+#url{
+  width: 60vw;
+  padding-left: 10px;
+}
 @media screen and (max-width:768px){
   .home-container{
     background-color: none;
     justify-content: space-evenly;
+  }
+  #url{
+    width: 90vw;
+    margin-bottom: 20px;
   }
 }

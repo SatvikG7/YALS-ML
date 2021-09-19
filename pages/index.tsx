@@ -22,12 +22,12 @@ const Home: NextPage = () => {
             </main>
             <section className="w-full">
                 <form
-                    className="w-full flex md:flex-row flex-col items-center justify-between content-between"
-                    action="/api/post"
-                    method="post"
+                    className="w-full flex md:flex-row flex-col items-center justify-evenly content-between"
+                    action="/api/post/"
+                    method="POST"
                 >
                     <input
-                        className="md:w-full  bg-green-500 placeholder-green-800 rounded-md h-14"
+                        className="md:4/5 bg-green-500 placeholder-green-800 rounded-md h-14"
                         type="url"
                         name="url"
                         id="url"
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
                         required
                     />
                     <input
-                        className="md:w-1/2 bg-yellow-500 rounded-md h-14 "
+                        className="md:w-1/5 bg-yellow-500 rounded-md h-14 "
                         type="submit"
                         value="Generate Shorted Link"
                     />
