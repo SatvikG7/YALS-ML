@@ -1,12 +1,13 @@
 import "../styles/globals.css";
-import '../styles/index.css'
+import "../styles/index.css";
 import { Provider } from "next-auth/client";
 import type { AppProps } from "next/app";
 import Head from "next/head";
-
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <Provider>
+        <Provider session={pageProps.session}>
             <Head>
                 <title>YALS</title>
                 <meta
@@ -15,7 +16,12 @@ function MyApp({ Component, pageProps }: AppProps) {
                 />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <Component {...pageProps} />
+
+            <div  id="app">
+                <Navbar  />
+                <Component {...pageProps} />
+                <Footer />
+            </div>
         </Provider>
     );
 }

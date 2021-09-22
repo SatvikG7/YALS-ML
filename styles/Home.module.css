@@ -1,27 +1,3 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  height: 100vh;
-}
-
-.footer {
-  border-top: 1px solid #eaeaea;
-  margin-bottom: 25px;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-
 /* 
 .card {
   margin: 1rem;
@@ -53,14 +29,3 @@
   line-height: 1.5;
 } */
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
