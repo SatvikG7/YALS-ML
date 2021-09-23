@@ -13,7 +13,7 @@ const Home: NextPage = () => {
                         type="url"
                         name="url"
                         id="url"
-                        placeholder="your link goes here"
+                        placeholder="https://"
                         required
                     />
                     <input

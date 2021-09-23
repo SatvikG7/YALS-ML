@@ -9,11 +9,12 @@ export default NextAuth({
                         clientSecret: process.env.GITHUB_SECRET,
                 }),
         ],
-        database: process.env.MONGODB_URL,
-        secret: process.env.SECRET,
+        database: process.env.MONGODB_URI,
         session: {
                 jwt: true,
-                maxAge: 60 * 60 * 24 *3
+        },
+        jwt: {
+                secret: process.env.SECRET,
+                maxAge: 60*60*24*3
         }
-
 })

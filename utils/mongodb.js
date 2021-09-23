@@ -1,7 +1,7 @@
 import { MongoClient } from 'mongodb'
 
 let uri = process.env.MONGODB_URI
-let dbName = process.env.MONGODB_DB
+let dbName = process.env.DB_NAME
 
 let cachedClient= null
 let cachedDb = null

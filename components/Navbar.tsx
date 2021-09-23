@@ -55,13 +55,13 @@ const Navbar = () => {
                                     e.preventDefault();
                                     signIn();
                                 }}
-                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white"
+                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-500 hover:text-white"
                             >
                                 Sign in / Sign up
                             </a>
                         </Link>
                     ) : (
-                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">
+                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-500 hover:text-white">
                             {session?.user?.name}
                         </a>
                     )}
@@ -72,14 +72,14 @@ const Navbar = () => {
                                     e.preventDefault();
                                     signOut();
                                 }}
-                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white"
+                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-500 hover:text-white"
                             >
                                 Sign out
                             </a>
                         </Link>
                     )}
                     <Link href="/">
-                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">
+                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-500 hover:text-white">
                             About
                         </a>
                     </Link>

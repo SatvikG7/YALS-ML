@@ -1,18 +1,30 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
-import { parseBody } from "next/dist/server/api-utils";
+import { connectToDatabase } from "../../../utils/mongodb";
+const index = async (req: NextApiRequest, res: NextApiResponse) => {
+    const { db } = await connectToDatabase();
 
-const index = (req: NextApiRequest, res: NextApiResponse) => {
-        console.log(req.method)
-        if (req.method == 'POST') {
-                const {url} = req.body
-                const time = new Date();
-                const id = time.getTime();
-                console.log(url,id)
+    if (req.method == "POST") {
+        const { url } = req.body;
+        if (url) {
+            const time = new Date();
+            const id = time.getTime();
+            console.log(url, id);
+            let doc = await db
+                .collection("links")
+                .insertOne({ slinkID: id, llink: url });
+            if (doc) {
+                console.log(doc);
                 res.redirect(`/Shortened/${id}`);
+            }
+            res.status(500).json({
+                message: "Unable to create Shortened link :(. Try again",
+            });
         }
+        res.status(400).json({ message: "Bad request" });
+    }
 
-        res.redirect('/')
+    res.redirect("/");
 };
 
 export default index;
