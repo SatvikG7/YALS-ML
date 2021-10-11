@@ -13,13 +13,26 @@ const Link: NextPage = () => {
     return (
         <div className="shortened">
             <div className="flex">
-                <h3 className="text-3xl mr-2 bg-red-400 rounded-md px-2 py-1">Shortened Link: </h3>
-                <h3 id="slink" className="text-3xl bg-green-500 rounded-md px-2 py-1">
-                    {process.env.NODE_ENV == "development" &&
-                        "http://localhost:3000/" + surl}
-                    {process.env.NODE_ENV == "production" &&
-                        "https://" + process.env.DOMAIN + "/" + surl}
+                <h3 className="text-3xl mr-2 bg-red-400 rounded-md px-2 py-1">
+                    Shortened Link:{" "}
                 </h3>
+
+                {process.env.NODE_ENV == "production" && (
+                    <h3
+                        id="slink"
+                        className="text-3xl bg-green-500 rounded-md px-2 py-1"
+                    >
+                        {`https://yals.ml/${surl}`}
+                    </h3>
+                )}
+                {process.env.NODE_ENV == "development" && (
+                    <h3
+                        id="slink"
+                        className="text-3xl bg-green-500 rounded-md px-2 py-1"
+                    >
+                        {`http://localhost:3000/${surl}`}
+                    </h3>
+                )}
                 <button
                     className="text-2xl bg-yellow-500 rounded-md ml-2 px-3 py-1"
                     onClick={copy}
