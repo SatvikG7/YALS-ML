@@ -6,7 +6,7 @@ const Home: NextPage = () => {
                 <form
                     className="w-full flex md:flex-row flex-col items-center justify-evenly content-between"
                     action="/api/post/"
-                    method="POST"
+                method="POST"
                 >
                     <input
                         className="md:4/5 bg-green-500 placeholder-green-800 rounded-md h-14 px-3"
@@ -30,10 +30,12 @@ export default Home;
 
 export async function getServerSideProps(context) {
     // console.log(context);
+    const slug = context.params.slug
     const session = await getSession(context);
     return {
         props: {
             session,
+            slug
         },
     };
 }

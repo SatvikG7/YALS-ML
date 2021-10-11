@@ -1,0 +1,8 @@
+type Url {
+    LURL: String!
+    SURL: String!
+}
+
+type Query {
+    getURL(SURL: String!): Url @resolver(name: "getURL", paginated: true)
+}

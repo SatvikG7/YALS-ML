@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             </Head>
 
             <div  id="app">
-                <Navbar  />
+                <Navbar />
                 <Component {...pageProps} />
                 <Footer />
             </div>
