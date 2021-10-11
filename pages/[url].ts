@@ -8,7 +8,7 @@ export async function getServerSideProps(context) {
     const { url } = context.params;
 
     try {
-        const data = await getLURL(url);
+        const data:any = await getLURL(url);
         if (data) {
             return {
                 redirect: {

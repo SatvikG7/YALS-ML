@@ -7,13 +7,13 @@ const index = async (req: NextApiRequest, res: NextApiResponse) => {
         const { url } = req.body;
         if (url) {
             await checkLURL(url)
-                .then((data) => {
+                .then((data:any) => {
                     console.log(data);
                     res.redirect(`/Shortened/${data.data.SURL}`);
                 })
                 .catch((err) => {
                     createURL(url, nanoid(6))
-                        .then((data) => {
+                        .then((data:any) => {
                             console.log(data);
                             res.redirect(`/Shortened/${data.data.SURL}`);
                         })
