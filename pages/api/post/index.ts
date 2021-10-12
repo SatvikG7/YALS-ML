@@ -9,17 +9,17 @@ const index = async (req: NextApiRequest, res: NextApiResponse) => {
             await checkLURL(url)
                 .then((data:any) => {
                     console.log(data);
-                    res.redirect(`/Shortened/${data.data.SURL}`);
+                    res.redirect(302, `/Shortened/${data.data.SURL}`);
                 })
                 .catch((err) => {
                     createURL(url, nanoid(6))
                         .then((data:any) => {
                             console.log(data);
-                            res.redirect(`/Shortened/${data.data.SURL}`);
+                            res.redirect(302, `/Shortened/${data.data.SURL}`);
                         })
                         .catch((err) => {
                             res.status(500).json({
-                                msg: "Something went wrong.",
+                                error: "Something went wrong.",
                             });
                         });
                 });
