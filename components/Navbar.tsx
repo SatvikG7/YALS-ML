@@ -13,9 +13,45 @@ const Navbar = () => {
     return (
         <nav className="flex items-center flex-wrap bg-blue-400 p-3 w-full">
             <Link href="/">
-                <a className="inline-flex items-center p-2 mr-4 ">
-                    <span className="text-xl text-white font-bold tracking-wide">
-                        YetAnotherLinkShortener
+                <a className="inline-flex items-center p-2 bg-pink-200 rounded-xl">
+                    <span className="text-xl text-purple-900 font-bold tracking-wide">
+                        Y
+                    </span>
+                    <span className="text-xl text-purple-500 font-bold tracking-wide">
+                        et
+                    </span>
+                    <span className="text-xl text-purple-900 font-bold tracking-wide">
+                        A
+                    </span>
+                    <span className="text-xl text-purple-500 font-bold tracking-wide">
+                        nother
+                    </span>
+                    <span className="text-xl text-purple-900 font-bold tracking-wide">
+                        L
+                    </span>
+                    <span className="text-xl text-purple-500 font-bold tracking-wide">
+                        ink
+                    </span>
+                    <span className="text-xl text-purple-900 font-bold tracking-wide">
+                        S
+                    </span>
+                    <span className="text-xl text-purple-500 font-bold tracking-wide">
+                        hortener
+                    </span>
+                    <span className="text-xl text-purple-900-900 font-bold tracking-wide m-1">
+                        .
+                    </span>
+                    <span className="text-xl text-purple-900 font-bold tracking-wide">
+                        M
+                    </span>
+                    <span className="text-xl text-purple-500 font-bold tracking-wide">
+                        inify
+                    </span>
+                    <span className="text-xl text-purple-900 font-bold tracking-wide">
+                        L
+                    </span>
+                    <span className="text-xl text-purple-500 font-bold tracking-wide">
+                        ink
                     </span>
                 </a>
             </Link>
