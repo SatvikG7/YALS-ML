@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div  id="app">
+            <div id="app">
                 <Navbar />
                 <Component {...pageProps} />
                 <Footer />
