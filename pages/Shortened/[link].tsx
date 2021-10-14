@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
-import styles from "../../styles/Shortened.module.css";
 import { useRouter } from "next/dist/client/router";
-import { getSession } from "next-auth/client";
+// import { getSession } from "next-auth/client";
 const Link: NextPage = () => {
     const router = useRouter();
     const surl = router.query.link;
@@ -12,7 +11,7 @@ const Link: NextPage = () => {
     };
     return (
         <div className="shortened">
-            <div className="flex">
+            <div className="w-full flex md:flex-row flex-col items-center justify-evenly content-between">
                 <h3 className="text-3xl mr-2 bg-red-400 rounded-md px-2 py-1">
                     Shortened Link:{" "}
                 </h3>
@@ -20,7 +19,7 @@ const Link: NextPage = () => {
                 {process.env.NODE_ENV == "production" && (
                     <h3
                         id="slink"
-                        className="text-3xl bg-green-500 rounded-md px-2 py-1"
+                        className="text-3xl bg-green-500 rounded-md px-2 py-1 my-3"
                     >
                         {`https://yals.ml/${surl}`}
                     </h3>
@@ -28,7 +27,7 @@ const Link: NextPage = () => {
                 {process.env.NODE_ENV == "development" && (
                     <h3
                         id="slink"
-                        className="text-3xl bg-green-500 rounded-md px-2 py-1"
+                        className="text-3xl bg-green-500 rounded-md px-2 py-1 my-3"
                     >
                         {`http://localhost:3000/${surl}`}
                     </h3>
