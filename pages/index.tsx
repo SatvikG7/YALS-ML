@@ -17,9 +17,9 @@ const Home: NextPage = () => {
                     required
                 />
                 <input
-                    className="md:w-1/5 bg-yellow-500 rounded-md h-14 min-w-min"
+                    className="md:w-1/5 text-lg font-black bg-yellow-500 rounded-md h-14 min-w-min sm:px-1 px-3"
                     type="submit"
-                    value="Generate Shorted Link"
+                    value="Minify Link"
                 />
             </form>
         </div>
