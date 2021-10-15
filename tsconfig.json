@@ -15,6 +15,6 @@
         "jsx": "preserve",
         "noImplicitAny": false
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "utils/mongodb.js"],
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
     "exclude": ["node_modules"]
 }
