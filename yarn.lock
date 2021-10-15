@@ -126,6 +126,11 @@
   resolved "https://registry.yarnpkg.com/@napi-rs/triples/-/triples-1.0.3.tgz#76d6d0c3f4d16013c61e45dfca5ff1e6c31ae53c"
   integrity sha512-jDJTpta+P4p1NZTFVLHJ/TLFVYVcOqv6l8xwOeBKNPMgY/zDYH/YH7SJbvrr/h1RcS9GzbPcLKGzpuK9cV56UA==
 
+"@next-auth/fauna-adapter@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@next-auth/fauna-adapter/-/fauna-adapter-0.2.3.tgz#f8e66eacdf521b579014d1846ce87398974baac4"
+  integrity sha512-yrxxYt52tRsloPQlgcw+8LT67oaLh5yAxpfw0VAwnsoBWFAtPhf2CL0vdyfcnKr5LQshSm2o+WeeQc4zS6v+0w==
+
 "@next-auth/prisma-legacy-adapter@0.1.2":
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/@next-auth/prisma-legacy-adapter/-/prisma-legacy-adapter-0.1.2.tgz#d19b65696bf16bda5dbc88f85da98aee6f30e2f3"

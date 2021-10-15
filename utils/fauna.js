@@ -1,4 +1,5 @@
 const faunadb = require("faunadb");
+
 const Client = new faunadb.Client({
     secret: process.env.FAUNADB_SECRET,
     domain: "db.us.fauna.com",
@@ -26,6 +27,7 @@ const checkLURL = async (LURL) => {
 }
 
 module.exports = {
+    Client,
     getLURL,
     createURL,
     checkLURL,

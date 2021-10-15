@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next-auth/fauna-adapter": "^0.2.3",
     "clipboard": "^2.0.8",
     "faunadb": "^4.4.1",
     "graphql": "^15.6.1",
