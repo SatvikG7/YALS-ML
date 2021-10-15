@@ -13,46 +13,20 @@ const Navbar = () => {
     return (
         <nav className="flex items-center flex-wrap bg-blue-400 p-3 w-full">
             <Link href="/">
-                <a className="inline-flex items-center p-2 bg-pink-200 rounded-xl">
-                    <span className="text-xl text-purple-900 font-bold tracking-wide">
-                        Y
-                    </span>
-                    <span className="text-xl text-purple-500 font-bold tracking-wide">
-                        et
-                    </span>
-                    <span className="text-xl text-purple-900 font-bold tracking-wide">
-                        A
-                    </span>
-                    <span className="text-xl text-purple-500 font-bold tracking-wide">
-                        nother
-                    </span>
-                    <span className="text-xl text-purple-900 font-bold tracking-wide">
-                        L
-                    </span>
-                    <span className="text-xl text-purple-500 font-bold tracking-wide">
-                        ink
-                    </span>
-                    <span className="text-xl text-purple-900 font-bold tracking-wide">
-                        S
-                    </span>
-                    <span className="text-xl text-purple-500 font-bold tracking-wide">
-                        hortener
-                    </span>
-                    <span className="text-xl text-purple-900-900 font-bold tracking-wide m-1">
-                        .
-                    </span>
-                    <span className="text-xl text-purple-900 font-bold tracking-wide">
-                        M
-                    </span>
-                    <span className="text-xl text-purple-500 font-bold tracking-wide">
-                        inify
-                    </span>
-                    <span className="text-xl text-purple-900 font-bold tracking-wide">
-                        L
-                    </span>
-                    <span className="text-xl text-purple-500 font-bold tracking-wide">
-                        ink
-                    </span>
+                <a className="sm:text-2xl text-lg font-bold inline-flex items-center p-2 bg-yellow-300 rounded-xl">
+                    <span className="text-blue-700">Y</span>
+                    <span className="text-green-500">et</span>
+                    <span className="text-blue-700">A</span>
+                    <span className="text-green-500">nother</span>
+                    <span className="text-blue-700">L</span>
+                    <span className="text-green-500">ink</span>
+                    <span className="text-blue-700">S</span>
+                    <span className="text-green-500">hortener</span>
+                    <span className=" text-red-400 mx-1">.</span>
+                    <span className="text-blue-700">M</span>
+                    <span className="text-green-500">inify</span>
+                    <span className="text-blue-700">L</span>
+                    <span className="text-green-500">ink</span>
                 </a>
             </Link>
             <button
@@ -91,13 +65,13 @@ const Navbar = () => {
                                     e.preventDefault();
                                     signIn();
                                 }}
-                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-500 hover:text-white"
+                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-500 hover:text-white"
                             >
                                 Sign in / Sign up
                             </a>
                         </Link>
                     ) : (
-                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-500 hover:text-white">
+                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-500 hover:text-white">
                             {session?.user?.name}
                         </a>
                     )}
@@ -108,14 +82,14 @@ const Navbar = () => {
                                     e.preventDefault();
                                     signOut();
                                 }}
-                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-500 hover:text-white"
+                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-500 hover:text-white"
                             >
                                 Sign out
                             </a>
                         </Link>
                     )}
                     <Link href="/">
-                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-blue-500 hover:text-white">
+                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-500 hover:text-white">
                             About
                         </a>
                     </Link>
