@@ -1,34 +1,132 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <h3 align="center">YALS</h3>
+  <p align="center">
+    Yet Another Link Shortener
+    <br/>
+    <br/>
+    <a href="https://yals.ml">Visit</a>
+    .
+    <a href="https://github.com/SatvikG7/YALS-YetAnotherLinkShortener/issues">Report Bug</a>
+    .
+    <a href="https://github.com/SatvikG7/YALS-YetAnotherLinkShortener/issues">Request Feature</a>
+  </p>
+</p>
+
+![Downloads](https://img.shields.io/github/deployments/SatvikG7/YALS-YetAnotherLinkShortener/production?label=vercel&logo=vercel&logoColor=white) ![Contributors](https://img.shields.io/github/contributors/SatvikG7/YALS-YetAnotherLinkShortener?color=dark-green) ![Issues](https://img.shields.io/github/issues/SatvikG7/YALS-YetAnotherLinkShortener) ![License](https://img.shields.io/github/license/SatvikG7/YALS-YetAnotherLinkShortener)
+
+## Table Of Contents
+
+-   [About the Project](#about-the-project)
+-   [Built With](#built-with)
+-   [Getting Started](#getting-started)
+    -   [Prerequisites](#prerequisites)
+    -   [Installation](#installation)
+<!-- -   [Usage](#usage) -->
+-   [Roadmap](#roadmap)
+-   [Contributing](#contributing)
+-   [License](#license)
+-   [Authors](#authors)
+
+## About The Project
+
+![Screenshot](https://raw.githubusercontent.com/SatvikG7/YALS-YetAnotherLinkShortener/master/public/screenshot.jpeg)
+
+There are tons of link shorteners present on internet today, however, they do not let you create custom link or they limit them till some extent, but yals will soon let you create custom branded links for free, until my FaunaDB doesn't run out of space :smile:
+
+Here's why you should you yals:
+-   Most clear interface ever.
+-   No ads till now.
+-   100% uptime. verify @ http://status.yals.ml/
+-   Yals.ml sounds like (and is) a legitimate domain, by which the recipients are more likely to click on the link
+
+
+A list of commonly used resources that I find helpful are listed in the acknowledgements.
+
+## Built With
+
+- Nextjs
+- Tailwaind CSS
+- FaunaDB
 
 ## Getting Started
 
-First, run the development server:
+Here is how you can get started with the project locally
 
-```bash
+### Prerequisites
+
+-   npm
+
+```
+npm install npm@latest -g
+```
+
+### Installation
+
+1. Clone the repo
+```
+git clone https://github.com/SatvikG7/YALS-YetAnotherLinkShortener
+```
+
+2. Install NPM packages
+```
+npm install
+# or
+yarn install
+```
+
+3. Create `.env.local` in root directory of project
+
+4. Enter your API keys in `.env.local`
+```
+DOMAIN=localhost:3000
+FAUNADB_SECRET=<your_key>
+NODE_ENV=development
+```
+If you are using Authentication using Github(optional)
+```
+DOMAIN=localhost:3000
+FAUNADB_SECRET=<your_key>
+NODE_ENV=development
+GITHUB_ID=<your_client_id>
+GITHUB_SECRET=<your_secret>
+SECRET=<this_is_my_secret_for_auth>
+```
+
+5. Start dev server
+```
 npm run dev
 # or
 yarn dev
 ```
+<!-- ## Usage
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+_For more examples, please refer to the [Documentation](https://example.com)_ -->
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Roadmap
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+See the [open issues](https://github.com/SatvikG7/YALS-YetAnotherLinkShortener/issues) for a list of proposed features (and known issues).
 
-## Learn More
+## Contributing
 
-To learn more about Next.js, take a look at the following resources:
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   If you have suggestions for adding or removing features, feel free to [open an issue](https://github.com/SatvikG7/YALS-YetAnotherLinkShortener/issues/new) to discuss it, or directly create a pull request with necessary changes.
+-   Create individual PR for each suggestion.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Creating A Pull Request
 
-## Deploy on Vercel
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Distributed under the MIT License. See [LICENSE](https://github.com/SatvikG7/YALS-YetAnotherLinkShortener/blob/main/LICENSE) for more information.
+
+## Authors
+
+-   **Satvik Gaikwad** - [Satvik Gaikwad](https://github.com/SatvikG7/)
