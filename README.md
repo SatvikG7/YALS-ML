@@ -82,7 +82,7 @@ DOMAIN=localhost:3000
 FAUNADB_SECRET=<your_key>
 NODE_ENV=development
 ```
-If you are using Authentication using Github(optional)
+If you are using GitHub's Authentication(optional)
 ```
 DOMAIN=localhost:3000
 FAUNADB_SECRET=<your_key>
