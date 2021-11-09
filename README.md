@@ -78,13 +78,14 @@ yarn install
 
 4. Enter your API keys in `.env.local`
 ```
-DOMAIN=localhost:3000
+BASE_URL=http://localhost:3000
 FAUNADB_SECRET=<your_key>
 NODE_ENV=development
 ```
 If you are using GitHub's Authentication(optional)
 ```
-DOMAIN=localhost:3000
+BASE_URL=http://localhost:3000
+NEXTAUTH_URL=http://localhost:3000
 FAUNADB_SECRET=<your_key>
 NODE_ENV=development
 GITHUB_ID=<your_client_id>
