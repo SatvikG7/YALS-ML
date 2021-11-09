@@ -8,13 +8,13 @@ const index = async (req: NextApiRequest, res: NextApiResponse) => {
         if (url) {
             await checkLURL(url)
                 .then((data:any) => {
-                    console.log(data);
+                    // console.log(data);
                     res.redirect(302, `/Shortened/${data.data.SURL}`);
                 })
                 .catch((err) => {
                     createURL(url, nanoid(6))
                         .then((data:any) => {
-                            console.log(data);
+                            // console.log(data);
                             res.redirect(302, `/Shortened/${data.data.SURL}`);
                         })
                         .catch((err) => {
