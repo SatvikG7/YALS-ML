@@ -1,6 +1,5 @@
 import NextAuth from "next-auth";
 import Providers from "next-auth/providers";
-import * as Fauna from "faunadb";
 import { FaunaAdapter } from "@next-auth/fauna-adapter";
 import {Client} from "../../../utils/fauna"
 

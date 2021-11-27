@@ -6,5 +6,5 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  res.status(200).json({ name: 'You are in index' })
+  res.status(200).json({ Status: 'All Well' })
 }
