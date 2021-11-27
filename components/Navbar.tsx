@@ -11,22 +11,22 @@ const Navbar = () => {
         setActive(!active);
     };
     return (
-        <nav className="flex items-center flex-wrap bg-blue-400 p-3 w-full">
+        <nav className="flex items-center flex-wrap bg-blue-500 p-3 w-full">
             <Link href="/">
-                <a className="sm:text-2xl text-lg font-bold inline-flex items-center p-2 bg-yellow-300 rounded-xl">
-                    <span className="text-blue-700">Y</span>
-                    <span className="text-green-500">et</span>
-                    <span className="text-blue-700">A</span>
-                    <span className="text-green-500">nother</span>
-                    <span className="text-blue-700">L</span>
-                    <span className="text-green-500">ink</span>
-                    <span className="text-blue-700">S</span>
-                    <span className="text-green-500">hortener</span>
-                    <span className=" text-red-400 mx-1">.</span>
-                    <span className="text-blue-700">M</span>
-                    <span className="text-green-500">inify</span>
-                    <span className="text-blue-700">L</span>
-                    <span className="text-green-500">ink</span>
+                <a className="sm:text-xl text-base font-bold inline-flex items-center p-2 bg-yellow-300 rounded-xl">
+                    <span className="text-blue-500">Y</span>
+                    <span className="text-red-500">et</span>
+                    <span className="text-blue-500">A</span>
+                    <span className="text-red-500">nother</span>
+                    <span className="text-blue-500">L</span>
+                    <span className="text-red-500">ink</span>
+                    <span className="text-blue-500">S</span>
+                    <span className="text-red-500">hortener</span>
+                    <span className="text-black mx-1">.</span>
+                    <span className="text-blue-500">M</span>
+                    <span className="text-red-500">inify</span>
+                    <span className="text-blue-500">L</span>
+                    <span className="text-red-500">ink</span>
                 </a>
             </Link>
             <button
@@ -65,13 +65,13 @@ const Navbar = () => {
                                     e.preventDefault();
                                     signIn();
                                 }}
-                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-500 hover:text-white"
+                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-600 hover:text-white"
                             >
                                 Sign in / Sign up
                             </a>
                         </Link>
                     ) : (
-                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-500 hover:text-white">
+                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-600 hover:text-white">
                             {session?.user?.name}
                         </a>
                     )}
@@ -82,17 +82,21 @@ const Navbar = () => {
                                     e.preventDefault();
                                     signOut();
                                 }}
-                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-500 hover:text-white"
+                                className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-600 hover:text-white"
                             >
                                 Sign out
                             </a>
                         </Link>
                     )}
-                    <Link href="https://github.com/SatvikG7/YALS-YetAnotherLinkShortener/blob/main/README.md">
-                        <a className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-500 hover:text-white">
-                            About
-                        </a>
-                    </Link>
+
+                    <a
+                        href="https://github.com/SatvikG7/YALS-YetAnotherLinkShortener/blob/main/README.md"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-600 hover:text-white"
+                    >
+                        About
+                    </a>
                 </div>
             </div>
         </nav>

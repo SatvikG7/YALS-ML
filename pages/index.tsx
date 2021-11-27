@@ -17,9 +17,10 @@ const Home: NextPage = () => {
                     required
                 />
                 <input
-                    className="md:w-1/5 text-lg font-black bg-yellow-500 rounded-md h-14 min-w-min sm:px-1 px-3"
+                    className="md:w-1/5 text-2xl font-semibold bg-yellow-500 rounded-md h-14 min-w-min sm:px-1 px-3 text-blue-600"
                     type="submit"
                     value="Minify Link"
+                    aria-label="Minify Link"
                 />
             </form>
         </div>
