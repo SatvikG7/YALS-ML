@@ -20,7 +20,7 @@ export async function getServerSideProps(context) {
     } catch {
       return {
         redirect: {
-            destination: "/",
+            destination: "/404",
         },
     };
     }
