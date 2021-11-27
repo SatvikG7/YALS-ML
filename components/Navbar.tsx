@@ -90,7 +90,7 @@ const Navbar = () => {
                     )}
 
                     <a
-                        href="https://github.com/SatvikG7/YALS-YetAnotherLinkShortener/blob/main/README.md"
+                        href="https://github.com/SatvikG7/YALS-YetAnotherLinkShortener#readme"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white items-center justify-center hover:bg-blue-600 hover:text-white"
