@@ -36,7 +36,7 @@ There are tons of link shorteners present on internet today, however, they do no
 Here's why you should you yals:
 -   Most clear interface ever.
 -   No ads till now.
--   100% uptime. verify @ http://status.yals.ml/
+-   99% uptime. 
 -   Yals.ml sounds like (and is) a legitimate domain, by which the recipients are more likely to click on the link
 
 
