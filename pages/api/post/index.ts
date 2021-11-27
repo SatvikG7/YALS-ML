@@ -2,9 +2,12 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import { checkLURL, createURL } from "../../../utils/fauna";
 import { nanoid } from "nanoid";
+
 const index = async (req: NextApiRequest, res: NextApiResponse) => {
+
     if (req.method == "POST") {
         const { url } = req.body;
+
         if (url) {
             await checkLURL(url)
                 .then((data:any) => {
@@ -25,10 +28,12 @@ const index = async (req: NextApiRequest, res: NextApiResponse) => {
                 });
         }
         else if(!url) {
-            res.status(400).json({ message: "'URL' not found in POST body" });
+            res.status(400).json({ message: "Bad Request" });
         }
-    } else {
-        res.status(500).redirect("/");
+
+    }
+    else {
+        res.status(302).redirect("/");
     }
 };
 
