@@ -13,24 +13,14 @@ const Navbar = () => {
     return (
         <nav className="flex items-center flex-wrap bg-blue-500 p-3 w-full">
             <Link href="/">
-                <a className="sm:text-xl text-base font-bold inline-flex items-center p-2 bg-yellow-300 rounded-xl">
-                    <span className="text-blue-500">Y</span>
-                    <span className="text-red-500">et</span>
-                    <span className="text-blue-500">A</span>
-                    <span className="text-red-500">nother</span>
-                    <span className="text-blue-500">L</span>
-                    <span className="text-red-500">ink</span>
-                    <span className="text-blue-500">S</span>
-                    <span className="text-red-500">hortener</span>
-                    <span className="text-black mx-1">.</span>
-                    <span className="text-blue-500">M</span>
-                    <span className="text-red-500">inify</span>
-                    <span className="text-blue-500">L</span>
-                    <span className="text-red-500">ink</span>
+                <a className="sm:text-xl text-base font-bold inline-flex items-center p-2 bg-white rounded-xl">
+                    <span className="text-forange">YetAnotherLinkShortener</span>
+                    <span className="text-fblue">.</span>
+                    <span className="text-fgreen">MinifyLink</span>
                 </a>
             </Link>
             <button
-                className=" inline-flex p-3 hover:bg-blue-500 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
+                className="inline-flex p-3 hover:bg-blue-500 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
                 onClick={handleClick}
             >
                 <svg

@@ -2,14 +2,14 @@ import type { NextPage } from "next";
 import { getSession } from "next-auth/client";
 const Home: NextPage = () => {
     return (
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col w-screen items-center">
             <form
-                className="w-full flex md:flex-row flex-col items-center justify-evenly content-between"
+                className="w-10/12 flex md:flex-row flex-col items-center justify-evenly content-between"
                 action="/api/post/"
                 method="POST"
             >
                 <input
-                    className="md:4/5 bg-green-500 placeholder-green-800 rounded-md h-14 px-3"
+                    className="md:4/5 text-2xl bg-green-500 placeholder-green-800 rounded-md h-14 px-3"
                     type="url"
                     name="url"
                     id="url"
@@ -17,7 +17,8 @@ const Home: NextPage = () => {
                     required
                 />
                 <input
-                    className="md:w-1/5 text-2xl font-semibold bg-yellow-500 rounded-md h-14 min-w-min sm:px-1 px-3 text-blue-600"
+                    className="md:w-1/5 text-2xl font-semibold text-gray-800 bg-yellow-500
+                    hover:opacity-95 rounded-md h-14 min-w-min sm:px-1 px-3 transition-all"
                     type="submit"
                     value="Minify Link"
                     aria-label="Minify Link"
