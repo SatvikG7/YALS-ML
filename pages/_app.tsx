@@ -20,13 +20,11 @@ function MyApp({ Component, pageProps }: AppProps) {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 />
-
                 <meta
                     name="keywords"
-                    content="YALS, link shortener, short link, small link, minify url, url shortener"
+                    content="YALS, link shortener, short link, minify url, url shortener, yals ml, yals satvikg7, satvikg7, yals-yet-another-link-shortener"
                 />
                 <meta name="author" content="SatvikG7" />
-
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div id="app">
