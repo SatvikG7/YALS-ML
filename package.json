@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next-auth/fauna-adapter": "^0.2.3",
+    "axios": "^0.24.0",
     "faunadb": "^4.4.1",
     "graphql": "^15.6.1",
     "nanoid": "^3.1.29",
