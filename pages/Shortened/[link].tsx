@@ -8,9 +8,15 @@ const Link: NextPage = () => {
     const surl = router.query.link;
 
     const copy = () => {
-        const slink = document.getElementById("slink");
-        let link: string = slink?.innerHTML.toString()!;
-        if (link) navigator.clipboard.writeText(link);
+        if (navigator.clipboard) {
+            if (document.getElementById("slink") !== null) {
+                const slink = document.getElementById("slink");
+                const link = slink?.innerHTML.toString();
+                if (link) navigator.clipboard.writeText(link);
+            }
+        } else {
+            console.log("clipboard not supported");
+        }
     };
 
     return (
@@ -21,15 +27,13 @@ const Link: NextPage = () => {
                 </h3>
                 <h3
                     id="slink"
-                    className="text-3xl bg-green-500 rounded-md px-2 py-1 my-3"
-                >
+                    className="text-3xl bg-green-500 rounded-md px-2 py-1 my-3">
                     {`${domain}/${surl}`}
                 </h3>
 
                 <button
                     className="text-2xl bg-yellow-500 rounded-md ml-2 px-3 py-1"
-                    onClick={copy}
-                >
+                    onClick={copy}>
                     Copy to Clipboard
                 </button>
             </div>

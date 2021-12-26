@@ -1,30 +1,29 @@
-import { getLURL } from "../utils/fauna";
+import { getLURL } from "../lib/fauna";
 
 const Url = () => {
     return null;
 };
 
 export async function getServerSideProps(context) {
-    const { url } = context.params;
-
+	const { url } = context.params;
+	
     try {
-        const data:any = await getLURL(url);
-        if (data) {
+        const response = await getLURL(url);
+        if (response.data) {
             return {
                 redirect: {
-                    destination: data.data.LURL,
-                    permanent: true,
+                    destination: response.data.LURL,
+                    permanent: false,
                 },
             };
         }
     } catch {
-      return {
-        redirect: {
-            destination: "/404",
-        },
-    };
+        return {
+            redirect: {
+                destination: "/404",
+            },
+        };
     }
-   
 }
 
 export default Url;

@@ -4,25 +4,24 @@ import axios from "axios";
 import type { AxiosRequestConfig } from "axios";
 
 export default async function handler(
-	req: NextApiRequest,
-	res: NextApiResponse
+    req: NextApiRequest,
+    res: NextApiResponse
 ) {
-	let api_response;
-	let headersList = {
-		Accept: "*/*",
-		Authorization: `Bearer ${process.env.VERCEL_API_TOKEN}`,
-		"Content-Type": "application/json",
-	};
+    const headersList = {
+        Accept: "*/*",
+        Authorization: `Bearer ${process.env.VERCEL_API_TOKEN}`,
+        "Content-Type": "application/json",
+    };
 
-	let reqOptions: AxiosRequestConfig = {
-		url: process.env.VERCEL_API_URL,
-		method: "GET",
-		headers: headersList,
-	};
-	let lastmod: Date;
-	const response = await axios(reqOptions);
-	lastmod = await new Date(response.data.deployments[0].ready);
-	const data = `
+    const reqOptions: AxiosRequestConfig = {
+        url: process.env.VERCEL_API_URL,
+        method: "GET",
+        headers: headersList,
+    };
+
+    const response = await axios(reqOptions);
+    const lastmod = await new Date(response.data.deployments[0].ready);
+    const data = `
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 		<url>
 			<loc>https://yals.ml/</loc>
@@ -38,5 +37,8 @@ export default async function handler(
 		</url>
 	</urlset>
 	`;
-	await res.status(200).setHeader("Content-Type", "application/xml").send(data);
+    await res
+        .status(200)
+        .setHeader("Content-Type", "application/xml")
+        .send(data);
 }

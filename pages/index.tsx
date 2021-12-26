@@ -1,13 +1,12 @@
 import type { NextPage } from "next";
-import { getSession } from "next-auth/client";
+import { getSession } from "next-auth/react";
 const Home: NextPage = () => {
     return (
         <div className="flex flex-col w-screen items-center">
             <form
                 className="w-10/12 flex md:flex-row flex-col items-center justify-evenly content-between"
                 action="/api/post/"
-                method="POST"
-            >
+                method="POST">
                 <input
                     className="md:4/5 text-2xl bg-green-500 placeholder-green-800 rounded-md h-14 px-3"
                     type="url"

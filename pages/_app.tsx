@@ -1,14 +1,13 @@
 import "../styles/globals.css";
 import "../styles/index.css";
-import { Provider } from "next-auth/client";
-import type { AppProps } from "next/app";
+import { SessionProvider } from "next-auth/react";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }) {
     return (
-        <Provider session={pageProps.session}>
+        <SessionProvider session={pageProps.session}>
             <Head>
                 <title>YALS - Yet Another Link Shortener</title>
                 <meta
@@ -32,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
                 <Component {...pageProps} />
                 <Footer />
             </div>
-        </Provider>
+        </SessionProvider>
     );
 }
 export default MyApp;

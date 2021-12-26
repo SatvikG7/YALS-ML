@@ -1,22 +1,29 @@
 import NextAuth from "next-auth";
-import Providers from "next-auth/providers";
+import GitHub from "next-auth/providers/github";
 import { FaunaAdapter } from "@next-auth/fauna-adapter";
-import {Client} from "../../../utils/fauna"
+import Client from "../../../lib/fauna";
 
 export default NextAuth({
     // Configure one or more authentication providers
     providers: [
-        Providers.GitHub({
-            clientId: process.env.GITHUB_ID,
-            clientSecret: process.env.GITHUB_SECRET,
+        GitHub({
+            clientId: process.env.GITHUB_CLIENT_ID,
+            clientSecret: process.env.GITHUB_CLIENT_SECRET,
         }),
     ],
-    adapter: FaunaAdapter({ faunaClient: Client }),
+    secret: process.env.SECRET,
+    adapter: FaunaAdapter(Client),
     session: {
-        jwt: true,
+        maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
+        strategy: "database",
     },
     jwt: {
-        secret: process.env.SECRET,
-        maxAge: 60 * 60 * 24 * 3,
+        secret: process.env.JWT_SECRET,
+        maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days
+    },
+    theme: {
+        colorScheme: "dark",
+        logo: "/logo.png",
+        brandColor: "#000",
     },
 });
