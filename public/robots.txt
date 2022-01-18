@@ -4,4 +4,4 @@ Allow: /
 User-agent: *
 Disallow: /Shortened/
 
-Sitemap: https:///yals.ml/api/sitemap.xml
+Sitemap: https://yals.ml/api/sitemap.xml
