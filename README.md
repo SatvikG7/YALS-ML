@@ -1,4 +1,6 @@
-<p align="center">⚠️This project is on hold for next 6 months⚠️</p>
+<p align="center">🚩 This project is on hold till 2022-07-3 🚩</p>
+<p align="center"> ⚠️ yals.ml domain will only work till 2022-09-21 ⚠️ </p>
+
 <p align="center">
   <h3 align="center">YALS</h3>
   <p align="center">
