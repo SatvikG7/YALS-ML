@@ -18,7 +18,7 @@ const Navbar = () => {
             <Link href="/" passHref>
                 <Image
                     src="/logo.png"
-                    alt="YALS.ML"
+                    alt="YALS-ML"
                     width={168}
                     height={45}
                     priority

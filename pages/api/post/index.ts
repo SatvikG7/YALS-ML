@@ -10,7 +10,7 @@ const index = async (req: NextApiRequest, res: NextApiResponse) => {
             await checkLURL(url)
                 .then(({ data }) => {
                     // console.log(data);
-                    res.redirect(302, `/Shortened/${data.SURL}`);
+                    res.redirect(302, `/shortened/${data.SURL}`);
                 })
                 .catch(err => {
                     if (err) {
@@ -18,7 +18,7 @@ const index = async (req: NextApiRequest, res: NextApiResponse) => {
                             .then(({ data }) => {
                                 // console.log(data);
                                 
-                                res.redirect(302, `/Shortened/${data.SURL}`);
+                                res.redirect(302, `/shortened/${data.SURL}`);
                             })
                             .catch(err => {
                                 if (err) {

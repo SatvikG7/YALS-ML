@@ -9,10 +9,10 @@ function MyApp({ Component, pageProps }) {
     return (
         <SessionProvider session={pageProps.session}>
             <Head>
-                <title>YALS - Yet Another Link Shortener</title>
+                <title>YALS-ML Yet Another Link Shortener - Minify Link</title>
                 <meta
                     name="description"
-                    content="YALS-YetAnotherLinkShortener"
+                    content="YALS-ML - YetAnotherLinkShortener-MinifyLink"
                 />
                 <meta name="robots" content="index, follow" />
                 <meta

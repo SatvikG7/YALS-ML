@@ -1,21 +1,20 @@
-<p align="center">🚩 This project is on hold till 2022-07-3 🚩</p>
 <p align="center"> ⚠️ yals.ml domain will only work till 2022-09-21 ⚠️ </p>
 
 <p align="center">
-  <h3 align="center">YALS</h3>
+  <h3 align="center">YALS-ML</h3>
   <p align="center">
-    Yet Another Link Shortener
+    Yet Another Link Shortener - Minify Link
     <br/>
     <br/>
-    <a href="https://yals.ml">Visit</a>
+    <a href="https://yals-ml.vercel.app">Visit</a>
     .
-    <a href="https://github.com/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink/issues">Report Bug</a>
+    <a href="https://github.com/SatvikG7/YALS-ML/issues">Report Bug</a>
     .
-    <a href="https://github.com/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink/issues">Request Feature</a>
+    <a href="https://github.com/SatvikG7/YALS-ML/issues">Request Feature</a>
   </p>
 </p>
 
-![Downloads](https://img.shields.io/github/deployments/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink/production?label=vercel&logo=vercel&logoColor=white) ![Contributors](https://img.shields.io/github/contributors/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink?color=dark-green) ![Issues](https://img.shields.io/github/issues/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink) ![License](https://img.shields.io/github/license/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink)
+![Downloads](https://img.shields.io/github/deployments/SatvikG7/YALS-ML/production?label=vercel&logo=vercel&logoColor=white) ![Contributors](https://img.shields.io/github/contributors/SatvikG7/YALS-ML?color=dark-green) ![Issues](https://img.shields.io/github/issues/SatvikG7/YALS-ML) ![License](https://img.shields.io/github/license/SatvikG7/YALS-ML)
 
 ## Table Of Contents
 
@@ -38,18 +37,15 @@
 
 ## About The Project
 
-![Screenshot](https://raw.githubusercontent.com/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink/master/public/screenshot.jpeg)
+![Screenshot](https://raw.githubusercontent.com/SatvikG7/YALS-ML/master/public/screenshot.jpeg)
 
 There are tons of link shorteners present on internet today, however, they do not let you create custom link or they limit them till some extent, but yals will soon let you create custom branded links for free, until my FaunaDB doesn't run out of space :smile:
 
-Here's why you should you yals:
+Here's why you should you yals-ml:
 
 -   Most clear interface ever.
 -   No ads till now.
--   99% uptime.
--   Yals.ml sounds like (and is) a legitimate domain, by which the recipients are more likely to click on the link
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+-   99.99% uptime.
 
 ## Built With
 
@@ -57,6 +53,9 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 -   Tailwaind CSS
 -   FaunaDB
 
+## Deploy on
+
+- [Vercel](https://vercel.com)
 ## Getting Started
 
 Here is how you can get started with the project locally
@@ -64,20 +63,13 @@ Here is how you can get started with the project locally
 ### Requirements
 
 -   node
--   npm
--   yarn
-
-```
-npm install -g npm@latest
-npm install -g yarn@latest
-```
-
+-   npm or yarn
 ### Installation
 
 1. Clone the repo
 
     ```
-    git clone https://github.com/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink
+    git clone https://github.com/SatvikG7/YALS-ML
     ```
 
 2. Install NPM packages
@@ -171,13 +163,13 @@ yarn dev
 
 ## Roadmap
 
-See the [open issues](https://github.com/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/SatvikG7/YALS-ML/issues) for a list of proposed features (and known issues).
 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
--   If you have suggestions for adding or removing features, feel free to [open an issue](https://github.com/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink/issues/new) to discuss it, or directly create a pull request with necessary changes.
+-   If you have suggestions for adding or removing features, feel free to [open an issue](https://github.com/SatvikG7/YALS-ML/issues/new) to discuss it, or directly create a pull request with necessary changes.
 -   Create individual PR for each suggestion.
 
 ### Creating A Pull Request
@@ -190,7 +182,7 @@ Contributions are what make the open source community such an amazing place to b
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/SatvikG7/YALS.ML-YetAnotherLinkShortener.MinifyLink/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/SatvikG7/YALS-ML/blob/main/LICENSE) for more information.
 
 ## Authors
 

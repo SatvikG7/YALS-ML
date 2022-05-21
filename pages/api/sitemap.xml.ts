@@ -24,13 +24,13 @@ export default async function handler(
     const data = `
 	<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 		<url>
-			<loc>https://yals.ml/</loc>
+			<loc>https://yals-ml.vercel.app/</loc>
 			<lastmod>${await lastmod.toISOString().split("T")[0]}</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>1.0</priority>
 		</url>
 		<url>
-			<loc>https://yals.ml/api/auth/signin/</loc>
+			<loc>https://yals-ml.vercel.app/api/auth/signin/</loc>
 			<lastmod>${await lastmod.toISOString().split("T")[0]}</lastmod>
 			<changefreq>weekly</changefreq>
 			<priority>0.9</priority>
