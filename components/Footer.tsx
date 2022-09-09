@@ -6,9 +6,9 @@ const Footer = () => {
             <a
                 href="https://turl.vercel.app"
                 target="_blank"
-                rel="noopener noreferrer">
-                Powered by{" "}
-                <span>PLEASE USE turl.vercel.app FOR CREATING NEW LINKS</span>
+                rel="noopener noreferrer"
+            >
+                PLEASE USE turl.vercel.app FOR CREATING NEW LINKS
             </a>
         </footer>
     );
