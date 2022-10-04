@@ -1,4 +1,8 @@
-<p align="center"> ⚠️ yals.ml domain will only work till 2022-09-21 ⚠️ </p>
+<hr/>
+<p align="center"> ⚠️ yals.ml domain has deprecated ⚠️ </p>
+<p align="center"> ⚠️ Please replace yals.ml with yals-ml.vercel.app in previously created links ⚠️ </p>
+<p align="center"> ⚠️ Use turl.vercel.app for creating new links ⚠️ </p>
+<hr/>
 
 <p align="center">
   <h3 align="center">YALS-ML</h3>
@@ -16,7 +20,11 @@
 
 ![Downloads](https://img.shields.io/github/deployments/SatvikG7/YALS-ML/production?label=vercel&logo=vercel&logoColor=white) ![Contributors](https://img.shields.io/github/contributors/SatvikG7/YALS-ML?color=dark-green) ![Issues](https://img.shields.io/github/issues/SatvikG7/YALS-ML) ![License](https://img.shields.io/github/license/SatvikG7/YALS-ML)
 
+<hr/>
+
 ## Table Of Contents
+
+<hr/>
 
 - [Table Of Contents](#table-of-contents)
 - [About The Project](#about-the-project)
